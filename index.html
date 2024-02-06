@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+        integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+        integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="nav">
+            <div class="sidebar">
+                <i class='bx bx-menu-alt-left' onclick="menuBar()"></i>
+            </div>
+            <div class="left-nav">
+                <ul id="menu" class="menu">
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Home</a>
+                        <div class="dropdown-content">
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Contact</a>
+                        <div class="dropdown-content">
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                            <a href="#">link 2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Gallery</a>
+                        <div class="dropdown-content">
+                            <a href="#">link 3</a>
+                            <a href="#">link 3</a>
+                            <a href="#">link 3</a>
+                            <a href="#">link 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">FAQs</a>
+                        <div class="dropdown-content">
+                            <a href="#">link 4</a>
+                            <a href="#">link 4</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 5</a>
+                            <a href="#">Link 5</a>
+                            <a href="#">Link 5</a>
+                            <a href="#">Link 5</a>
+                            <a href="#">Link 5</a>
+                            <a href="#">Link 5</a>
+                            <a href="#">Link 5</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Blogs</a>
+                        <div class="dropdown-content">
+                            <a href="#">link 6</a>
+                            <a href="#">link 6</a>
+                            <a href="#">link 6</a>
+                            <a href="#">link 6</a>
+                        </div>
+                    </div>
+    
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-nav">
+            <img src="/300-3.jpg" class="image-fluid" alt="image-logo">
+        </div>
+    </div>
+
+    <script>
+        function menuBar() {
+            var x = document.getElementById("menu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+</body>
+</html>
+
